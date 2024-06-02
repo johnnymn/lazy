@@ -17,6 +17,8 @@ return {
     lspconfig.clojure_lsp.setup({})
     lspconfig.cmake.setup({})
     lspconfig.dockerls.setup({})
+    lspconfig.elixirls.setup({})
+    lspconfig.gopls.setup({})
     lspconfig.gopls.setup({})
     lspconfig.jdtls.setup({})
     lspconfig.lua_ls.setup({})
