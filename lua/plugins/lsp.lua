@@ -19,6 +19,7 @@ return {
     lspconfig.dockerls.setup({})
     lspconfig.elixirls.setup({})
     lspconfig.helm_ls.setup({})
+    lspconfig.ltex.setup({})
     lspconfig.gopls.setup({})
     lspconfig.gopls.setup({})
     lspconfig.jdtls.setup({})
