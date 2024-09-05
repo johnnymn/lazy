@@ -5,3 +5,4 @@ local map = vim.keymap.set
 
 map("n", "<Up>", "5k", { remap = true })
 map("n", "<Down>", "5j", { remap = true })
+map("n", "<leader>1", ":Neotree toggle<CR>", { noremap = true, silent = true })
