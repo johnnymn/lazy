@@ -22,7 +22,14 @@ return {
     lspconfig.ltex.setup({})
     lspconfig.gopls.setup({})
     lspconfig.gopls.setup({})
-    lspconfig.jdtls.setup({})
+    lspconfig.jdtls.setup({
+      handlers = {
+        ["language/status"] = function(_, _) end,
+        ["$/progress"] = function(_, _, _)
+          -- disable progress updates.
+        end,
+      },
+    })
     lspconfig.lua_ls.setup({})
     lspconfig.ocamllsp.setup({})
     lspconfig.ruff_lsp.setup({})
