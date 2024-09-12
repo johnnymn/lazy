@@ -38,7 +38,12 @@ return {
     lspconfig.sourcekit.setup({ filetypes = { "swift", "objective-c", "objective-cpp" } })
     lspconfig.sqlls.setup({})
     lspconfig.terraformls.setup({})
-    lspconfig.verible.setup({})
+    lspconfig.verible.setup({
+      cmd = {
+        "verible-verilog-ls",
+        "--rules=-module-filename",
+      },
+    })
     lspconfig.yamlls.setup({})
 
     local keymap = vim.keymap
