@@ -32,7 +32,6 @@ return {
     })
     lspconfig.lua_ls.setup({})
     lspconfig.ocamllsp.setup({})
-    lspconfig.pyright.setup({})
     lspconfig.ruff_lsp.setup({})
     lspconfig.racket_langserver.setup({})
     lspconfig.rust_analyzer.setup({})
