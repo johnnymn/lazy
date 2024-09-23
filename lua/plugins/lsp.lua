@@ -41,16 +41,6 @@ return {
         "--rules=-module-filename",
       },
     })
-    lspconfig.yamlls.setup({
-      settings = {
-        yaml = {
-          schemas = {
-            kubernetes = "*.yaml",
-          },
-          validate = false,
-        },
-      },
-    })
 
     local keymap = vim.keymap
 
