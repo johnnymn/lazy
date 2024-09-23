@@ -10,7 +10,7 @@ return {
           return vim.o.columns * 0.4
         end
       end,
-      open_mapping = [[<leader>2]],
+      open_mapping = [[<leader>']],
       hide_numbers = true,
       shade_filetypes = {},
       shade_terminals = true,
@@ -32,7 +32,5 @@ return {
         end,
       },
     })
-
-    vim.api.nvim_set_keymap("n", "<leader>2", ":ToggleTerm<CR>", { noremap = true, silent = true })
   end,
 }
