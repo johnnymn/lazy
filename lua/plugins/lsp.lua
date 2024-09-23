@@ -21,13 +21,10 @@ return {
     lspconfig.helm_ls.setup({})
     lspconfig.ltex.setup({})
     lspconfig.gopls.setup({})
-    lspconfig.gopls.setup({})
     lspconfig.jdtls.setup({
       handlers = {
         ["language/status"] = function(_, _) end,
-        ["$/progress"] = function(_, _, _)
-          -- disable progress updates.
-        end,
+        ["$/progress"] = function(_, _, _) end,
       },
     })
     lspconfig.lua_ls.setup({})
@@ -44,18 +41,24 @@ return {
         "--rules=-module-filename",
       },
     })
-    lspconfig.yamlls.setup({})
+    lspconfig.yamlls.setup({
+      settings = {
+        yaml = {
+          schemas = {
+            kubernetes = "*.yaml",
+          },
+          validate = false,
+        },
+      },
+    })
 
     local keymap = vim.keymap
 
     vim.api.nvim_create_autocmd("LspAttach", {
       group = vim.api.nvim_create_augroup("UserLspConfig", {}),
       callback = function(ev)
-        -- Buffer local mappings.
-        -- See `:help vim.lsp.*` for documentation on any of the below functions
         local opts = { buffer = ev.buf, silent = true }
 
-        -- set keybinds
         opts.desc = "Show LSP references"
         keymap.set("n", "gR", "<cmd>Telescope lsp_references<CR>", opts)
 
