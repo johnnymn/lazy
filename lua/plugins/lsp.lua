@@ -29,7 +29,7 @@ return {
     })
     lspconfig.lua_ls.setup({})
     lspconfig.ocamllsp.setup({})
-    lspconfig.ruff_lsp.setup({})
+    lspconfig.pyright.setup({})
     lspconfig.racket_langserver.setup({})
     lspconfig.rust_analyzer.setup({})
     lspconfig.sourcekit.setup({ filetypes = { "swift", "objective-c", "objective-cpp" } })
