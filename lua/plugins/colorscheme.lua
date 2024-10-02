@@ -11,4 +11,7 @@ return {
       colorscheme = "onenord",
     },
   },
+  { "ellisonleao/gruvbox.nvim" },
+  { "catppuccin/nvim" },
+  { "loctvl842/monokai-pro.nvim" },
 }
