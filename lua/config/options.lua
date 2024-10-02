@@ -1,4 +1,4 @@
-vim.opt.relativenumber = false
+vim.opt.relativenumber = true
 vim.g.tutor_is_loaded = 1
 vim.opt.backspace = { "indent", "eol", "start" }
 vim.o.sessionoptions = "blank,curdir,folds,tabpages,winsize,terminal"
