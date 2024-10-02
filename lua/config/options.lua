@@ -3,6 +3,10 @@ vim.g.tutor_is_loaded = 1
 vim.opt.backspace = { "indent", "eol", "start" }
 vim.o.sessionoptions = "blank,curdir,folds,tabpages,winsize,terminal"
 
+if vim.g.neovide then
+  vim.o.guifont = "JetBrainsMono Nerd Font Mono:h14"
+end
+
 if not vim.g.vscode then
   vim.g.NERDTreeShowHidden = 1
   vim.g.neovide_scale_factor = 1.40
