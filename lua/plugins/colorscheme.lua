@@ -1,11 +1,14 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
-  { "sainnhe/gruvbox-material" },
-
+  {
+    "rmehri01/onenord.nvim",
+    config = function()
+      require("onenord").setup()
+    end,
+  },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "onenord",
     },
   },
 }
