@@ -1,17 +1,15 @@
 return {
   {
-    "rmehri01/onenord.nvim",
-    config = function()
-      require("onenord").setup()
-    end,
+    "ellisonleao/gruvbox.nvim",
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onenord",
+      colorscheme = "gruvbox",
+      contrast = "soft",
     },
   },
-  { "ellisonleao/gruvbox.nvim" },
+  { "rmehri01/onenord.nvim" },
   { "catppuccin/nvim" },
   { "loctvl842/monokai-pro.nvim" },
 }
