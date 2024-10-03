@@ -1,6 +1,7 @@
 if vim.g.vscode then
   return {
     { "neovim/nvim-lspconfig", enabled = false },
+    { "nvim-lualine/lualine.nvim", enabled = false },
     { "hrsh7th/nvim-cmp", enabled = false },
     { "Olical/conjure", enabled = false },
     { "nvimdev/dashboard-nvim", enabled = false },
