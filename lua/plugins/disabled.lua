@@ -7,6 +7,8 @@ if vim.g.vscode then
     { "nvimdev/dashboard-nvim", enabled = false },
     { "lewis6991/gitsigns.nvim", enabled = false },
     { "folke/lazy.nvim", enabled = false },
+    { "folke/which-key.nvim", enabled = false },
+    { "smoka7/multicursors.nvim", enabled = false },
     { "mfussenegger/nvim-dap-python", enabled = false },
     { "rcarriga/nvim-notify", enabled = false },
   }
