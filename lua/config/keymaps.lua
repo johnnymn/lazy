@@ -1,8 +1,9 @@
 local map = vim.keymap.set
 
+map("n", "<Up>", "5k", { remap = true })
+map("n", "<Down>", "5j", { remap = true })
+
 if not vim.g.vscode then
-  map("n", "<Up>", "5k", { remap = true })
-  map("n", "<Down>", "5j", { remap = true })
   map("n", "<leader>dc", "<cmd>lua require'dap'.continue()<CR>", { noremap = true, silent = true })
   map("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", { noremap = true, silent = true })
   map("n", "<leader>dt", "<cmd>lua require'dap-python'.test_method()<CR>", { noremap = true, silent = true })
