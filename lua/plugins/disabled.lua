@@ -26,6 +26,16 @@ if vim.g.vscode then
     { "nvim-telescope/telescope-fzf-native.nvim", enabled = false },
     { "nvim-telescope/telescope.nvim", enabled = false },
     { "linux-cultist/venv-selector.nvim", enabled = false },
+    { "catppuccin/nvim", enabled = false },
+    { "stevearc/conform.nvim", enabled = false },
+    { "sQVe/grug-far.nvim", enabled = false },
+    { "neopallium/luvit-meta", enabled = false },
+    { "williamboman/mason.nvim", enabled = false },
+    { "echasnovski/mini.icons", enabled = false },
+    { "nvim-neo-tree/neo-tree.nvim", enabled = false },
+    { "MunifTanjim/nui.nvim", enabled = false },
+    { "folke/tokyonight.nvim", enabled = false },
+    { "folke/trouble.nvim", enabled = false },
   }
 else
   return {
