@@ -11,6 +11,9 @@ if vim.g.vscode then
     { "smoka7/multicursors.nvim", enabled = false },
     { "mfussenegger/nvim-dap-python", enabled = false },
     { "rcarriga/nvim-notify", enabled = false },
+    { "akinsho/toggleterm.nvim", enabled = false },
+    { "NeogitOrg/neogit", enabled = false },
+    { "mfussenegger/nvim-dap", enabled = false },
   }
 else
   return {
