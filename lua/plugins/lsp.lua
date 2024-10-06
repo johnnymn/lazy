@@ -16,6 +16,7 @@ return {
     lspconfig.clangd.setup({})
     lspconfig.clojure_lsp.setup({})
     lspconfig.cmake.setup({})
+    lspconfig.coq_lsp.setup({})
     lspconfig.dockerls.setup({})
     lspconfig.elixirls.setup({})
     lspconfig.helm_ls.setup({})
