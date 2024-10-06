@@ -30,7 +30,6 @@ return {
     })
     lspconfig.lua_ls.setup({})
     lspconfig.ocamllsp.setup({})
-    lspconfig.ruff_lsp.setup({})
     lspconfig.pyright.setup({})
     lspconfig.racket_langserver.setup({})
     lspconfig.rust_analyzer.setup({})
@@ -43,6 +42,13 @@ return {
         "--rules=-module-filename",
       },
     })
+
+    -- Disable hover definitions for Ruff
+    local on_attach = function(client, _)
+      client.server_capabilities.hoverProvider = false
+    end
+
+    lspconfig.ruff_lsp.setup({ on_attach = on_attach })
 
     local keymap = vim.keymap
 
