@@ -3,6 +3,12 @@ local map = vim.keymap.set
 map({ "n", "v" }, "<Up>", "5k", { noremap = true })
 map({ "n", "v" }, "<Down>", "5j", { noremap = true })
 map("t", "æ", [[<C-\><C-n>]], { desc = "Enter normal mode in terminal", noremap = true, silent = true })
+map(
+  "n",
+  "<leader>tr",
+  "<cmd>lua require('toggleterm.terminal').Terminal:new():toggle()<CR>",
+  { noremap = true, silent = true }
+)
 
 if not vim.g.vscode then
   map("n", "<leader>dc", "<cmd>lua require'dap'.continue()<CR>", { noremap = true, silent = true })
