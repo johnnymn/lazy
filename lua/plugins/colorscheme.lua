@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "onenord",
     },
   },
   { "rmehri01/onenord.nvim" },
