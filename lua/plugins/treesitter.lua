@@ -15,6 +15,7 @@ return {
       "disassembly",
       "dockerfile",
       "elixir",
+      "fennel",
       "firrtl",
       "fortran",
       "go",

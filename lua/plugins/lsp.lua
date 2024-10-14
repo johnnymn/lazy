@@ -19,6 +19,7 @@ return {
     lspconfig.coq_lsp.setup({})
     lspconfig.dockerls.setup({})
     lspconfig.elixirls.setup({})
+    lspconfig.fennel_ls.setup({})
     lspconfig.helm_ls.setup({})
     lspconfig.ltex.setup({})
     lspconfig.gopls.setup({})
