@@ -10,6 +10,13 @@ map(
   { noremap = true, silent = true }
 )
 
+-- Remove lazygit mappings
+vim.keymap.del("n", "<leader>gg")
+vim.keymap.del("n", "<leader>gG")
+vim.keymap.del("n", "<leader>gl")
+vim.keymap.del("n", "<leader>gL")
+vim.keymap.del("n", "<leader>gf")
+
 if not vim.g.vscode then
   map("n", "<leader>dc", "<cmd>lua require'dap'.continue()<CR>", { noremap = true, silent = true })
   map("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", { noremap = true, silent = true })
