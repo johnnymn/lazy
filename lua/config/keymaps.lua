@@ -21,4 +21,5 @@ if not vim.g.vscode then
   map("n", "<leader>dq", "<cmd>lua require'dap'.terminate()<CR>", { noremap = true, silent = true })
   map("n", "<leader>dh", "<cmd>lua require('dap.ui.widgets').hover()<CR>", { noremap = true, silent = true })
   map("n", "<leader>gn", ":Neogit<CR>", { noremap = true, silent = true })
+  map("n", "<leader>gb", ":GitBlameToggle<CR>", { desc = "Toggle Git Blame" })
 end
