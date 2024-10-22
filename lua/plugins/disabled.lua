@@ -36,6 +36,7 @@ if vim.g.vscode then
   }
 else
   return {
+    { "echasnovski/mini.icons", enabled = false },
     { "garymjr/nvim-snippets", enabled = false },
   }
 end

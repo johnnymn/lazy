@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onenord",
+      colorscheme = "monokai-pro-machine",
     },
   },
   { "rmehri01/onenord.nvim" },
