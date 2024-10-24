@@ -33,6 +33,8 @@ return {
     lspconfig.ocamllsp.setup({})
     lspconfig.pyright.setup({})
     lspconfig.racket_langserver.setup({})
+    lspconfig.rubocop.setup({})
+    lspconfig.ruby_lsp.setup({})
     lspconfig.rust_analyzer.setup({})
     lspconfig.sourcekit.setup({ filetypes = { "swift", "objective-c", "objective-cpp" } })
     lspconfig.sqlls.setup({})
