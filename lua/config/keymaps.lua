@@ -17,6 +17,11 @@ vim.keymap.del("n", "<leader>gl")
 vim.keymap.del("n", "<leader>gL")
 vim.keymap.del("n", "<leader>gf")
 
+map("i", "<C-i>", 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false,
+})
+
 if not vim.g.vscode then
   map("n", "<leader>dc", "<cmd>lua require'dap'.continue()<CR>", { noremap = true, silent = true })
   map("n", "<leader>db", "<cmd>lua require'dap'.toggle_breakpoint()<CR>", { noremap = true, silent = true })
