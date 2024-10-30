@@ -2,7 +2,6 @@ vim.opt.relativenumber = true
 vim.g.tutor_is_loaded = 1
 vim.opt.backspace = { "indent", "eol", "start" }
 vim.o.sessionoptions = "blank,curdir,folds,tabpages,winsize,terminal"
-vim.g.copilot_no_tab_map = true
 
 if vim.g.neovide then
   vim.o.guifont = "JetBrainsMono Nerd Font Mono:h14"
