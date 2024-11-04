@@ -57,5 +57,6 @@ return {
       "xml",
       "yaml",
     },
+    ignore_install = { "org" },
   },
 }
