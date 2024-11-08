@@ -5,3 +5,6 @@ require("config.lazy")
 if vim.g.neovide then
   vim.cmd([[autocmd VimEnter * cd ~]])
 end
+
+vim.o.background = "light"
+vim.cmd("colorscheme gruvbox")
