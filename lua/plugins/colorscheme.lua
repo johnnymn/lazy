@@ -2,13 +2,16 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "monokai-pro",
     },
   },
-  { "ellisonleao/gruvbox.nvim" },
-  config = function()
-    require("gruvbox").setup({
-      contrast = "soft",
-    })
-  end,
+  {
+    "loctvl842/monokai-pro.nvim",
+    config = function()
+      require("monokai-pro").setup({
+        filter = "machine",
+      })
+      vim.cmd.colorscheme("monokai-pro")
+    end,
+  },
 }
