@@ -15,10 +15,4 @@ if vim.g.gui_vimr then
       vim.cmd("VimRToggleFullscreen")
     end,
   })
-
-  vim.api.nvim_create_autocmd("VimEnter", {
-    callback = function()
-      vim.cmd("normal! gg")
-    end,
-  })
 end
