@@ -39,5 +39,6 @@ else
     { "echasnovski/mini.icons", enabled = false },
     { "garymjr/nvim-snippets", enabled = false },
     { "nvim-lualine/lualine.nvim", enabled = false },
+    { "nvimdev/dashboard-nvim", enabled = false },
   }
 end
