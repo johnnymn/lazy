@@ -33,3 +33,9 @@ vim.keymap.set("n", "<A-h>", "5h", { noremap = true, silent = true })
 vim.keymap.set("n", "<A-j>", "5j", { noremap = true, silent = true })
 vim.keymap.set("n", "<A-k>", "5k", { noremap = true, silent = true })
 vim.keymap.set("n", "<A-l>", "5l", { noremap = true, silent = true })
+
+-- MacOS specific bindings
+vim.keymap.set("n", "˙", "5h", { noremap = true, silent = true }) -- Alt + h
+vim.keymap.set("n", "∆", "5j", { noremap = true, silent = true }) -- Alt + j
+vim.keymap.set("n", "˚", "5k", { noremap = true, silent = true }) -- Alt + k
+vim.keymap.set("n", "¬", "5l", { noremap = true, silent = true }) -- Alt + l
