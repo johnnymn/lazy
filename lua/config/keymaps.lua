@@ -30,3 +30,8 @@ if not vim.g.vscode then
   map("n", "<leader>gn", ":Neogit<CR>", { noremap = true, silent = true })
   map("n", "<leader>gb", ":GitBlameToggle<CR>", { desc = "Toggle Git Blame" })
 end
+
+vim.keymap.set("n", "<A-h>", "5h", { noremap = true, silent = true })
+vim.keymap.set("n", "<A-j>", "5j", { noremap = true, silent = true })
+vim.keymap.set("n", "<A-k>", "5k", { noremap = true, silent = true })
+vim.keymap.set("n", "<A-l>", "5l", { noremap = true, silent = true })
