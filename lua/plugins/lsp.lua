@@ -51,7 +51,7 @@ return {
       client.server_capabilities.hoverProvider = false
     end
 
-    lspconfig.ruff_lsp.setup({ on_attach = on_attach })
+    lspconfig.ruff.setup({ on_attach = on_attach })
 
     local keymap = vim.keymap
 
