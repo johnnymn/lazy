@@ -9,11 +9,11 @@ map(
 )
 
 -- Remove lazygit mappings
-vim.keymap.del("n", "<leader>gg")
-vim.keymap.del("n", "<leader>gG")
-vim.keymap.del("n", "<leader>gl")
-vim.keymap.del("n", "<leader>gL")
-vim.keymap.del("n", "<leader>gf")
+-- vim.keymap.del("n", "<leader>gg")
+-- vim.keymap.del("n", "<leader>gG")
+-- vim.keymap.del("n", "<leader>gl")
+-- vim.keymap.del("n", "<leader>gL")
+-- vim.keymap.del("n", "<leader>gf")
 
 if not vim.g.vscode then
   map("n", "<leader>dc", "<cmd>lua require'dap'.continue()<CR>", { noremap = true, silent = true })
