@@ -30,6 +30,22 @@ return {
       },
     })
     lspconfig.lua_ls.setup({})
+    lspconfig.matlab_ls.setup({
+      cmd = { "matlab-language-server", "--stdio" },
+      filetypes = { "matlab" },
+      root_dir = lspconfig.util.root_pattern(".git", ".hg", "mwproject.json"),
+
+      settings = {
+        MATLAB = {
+          installPath = "/Applications/MATLAB_R2024b.app",
+          indexWorkspace = true,
+          matlabConnectionTiming = "onStart",
+          telemetry = false,
+        },
+      },
+
+      single_file_support = true,
+    })
     lspconfig.ocamllsp.setup({})
     lspconfig.pyright.setup({})
     lspconfig.racket_langserver.setup({})
