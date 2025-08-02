@@ -1,34 +1,24 @@
 return {
-  { "williamboman/mason.nvim" },
-  {
+  "williamboman/mason.nvim",
+
+  dependencies = {
     "williamboman/mason-lspconfig.nvim",
-    dependencies = "williamboman/mason.nvim",
-    opts = {
+  },
+
+  config = function()
+    require("mason").setup()
+
+    require("mason-lspconfig").setup({
       ensure_installed = {
-        "bash-language-server",
         "clangd",
-        "clojure-lsp",
-        "cmake-language-server",
-        "coq-lsp",
-        "dockerfile-language-server",
-        "elixir-ls",
-        "fennel-ls",
-        "helm-ls",
         "gopls",
         "jdtls",
-        "lua-language-server",
-        "matlab_ls",
-        "ocaml-lsp",
         "pyright",
         "rubocop",
-        "ruby-lsp",
-        "rust-analyzer",
         "sqlls",
-        "terraform-ls",
         "verible",
         "ruff",
       },
-      automatic_installation = true,
-    },
-  },
+    })
+  end,
 }
