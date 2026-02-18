@@ -28,7 +28,7 @@ if vim.g.vscode then
     { "sQVe/grug-far.nvim", enabled = false },
     { "neopallium/luvit-meta", enabled = false },
     { "williamboman/mason.nvim", enabled = false },
-    { "echasnovski/mini.icons", enabled = false },
+    { "nvim-mini/mini.icons", enabled = false },
     { "nvim-neo-tree/neo-tree.nvim", enabled = false },
     { "MunifTanjim/nui.nvim", enabled = false },
     { "folke/tokyonight.nvim", enabled = false },
@@ -36,7 +36,7 @@ if vim.g.vscode then
   }
 else
   return {
-    { "echasnovski/mini.icons", enabled = false },
+    { "nvim-mini/mini.icons", enabled = false },
     { "garymjr/nvim-snippets", enabled = false },
     { "nvim-lualine/lualine.nvim", enabled = false },
     { "nvimdev/dashboard-nvim", enabled = false },
