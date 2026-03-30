@@ -14,7 +14,7 @@ return {
         "gopls",
         "jdtls",
         "pyright",
-        "rubocop",
+        -- "rubocop",
         "sqlls",
         "verible",
         "ruff",
