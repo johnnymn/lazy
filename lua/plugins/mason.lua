@@ -11,7 +11,7 @@ return {
     require("mason-lspconfig").setup({
       ensure_installed = {
         "clangd",
-        "gopls",
+        -- "gopls",
         "jdtls",
         "pyright",
         -- "rubocop",
