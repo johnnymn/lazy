@@ -1,0 +1,21 @@
+-- return {
+--   {
+--     "linux-cultist/venv-selector.nvim",
+--     branch = "regexp",
+--     dependencies = {
+--       "neovim/nvim-lspconfig",
+--     },
+--     config = function()
+--       require("venv-selector").setup({
+--         settings = {
+--           search = {
+--             anaconda_base = {
+--               command = "fd /python$ /opt/homebrew/Caskroom/miniconda/base --full-path --color never -E /proc",
+--               type = "anaconda",
+--             },
+--           },
+--         },
+--       })
+--     end,
+--   },
+-- }
