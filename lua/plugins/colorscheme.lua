@@ -1,14 +1,19 @@
 return {
   {
+    "sainnhe/gruvbox-material",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.g.gruvbox_material_background = "soft"
+      vim.g.gruvbox_material_foreground = "material"
+      vim.g.gruvbox_material_better_performance = 1
+    end,
+  },
+
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "gruvbox-material",
     },
   },
-  { "ellisonleao/gruvbox.nvim" },
-  config = function()
-    require("gruvbox").setup({
-      contrast = "soft",
-    })
-  end,
 }

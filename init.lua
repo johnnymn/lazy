@@ -7,7 +7,6 @@ if vim.g.neovide then
 end
 
 vim.o.background = "dark"
-vim.cmd("colorscheme gruvbox")
 
 if vim.g.gui_vimr then
   vim.api.nvim_create_autocmd("VimEnter", {
